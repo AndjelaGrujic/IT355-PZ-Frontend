@@ -1,0 +1,76 @@
+/* font za celu stranicu */
+body {
+    font-family: Arial, sans-serif;
+}
+
+img,
+svg {
+    vertical-align: middle;
+    padding: 40px;
+}
+label {
+    display: inline-block;
+    padding: 6px;
+}
+
+/* boja pozadine */
+.container-fluid {
+    background-color: #000000;
+}
+
+/* boja naslova */
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* boja labela */
+.mat-form-field-label,
+.mat-hint {
+    color: #ffffff;
+}
+
+/* boja placeholder-a */
+::placeholder {
+    color: #d3d3d3;
+}
+
+/* boja inputa */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    stroke: #ffffff;
+}
+
+/* hover state za input */
+.mat-form-field-appearance-outline .mat-form-field-outline-thick:hover {
+    stroke: #6c757d;
+}
+
+/* boja za active input */
+.mat-form-field-appearance-outline .mat-form-field-outline-thick.mat-focused {
+    stroke: #ffffff;
+}
+
+/* boja za error state */
+.mat-form-field-appearance-outline .mat-form-field-outline.mat-form-field-outline-invalid {
+    stroke: #ff0000;
+}
+
+/* stil dugmeta */
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+/* boja dugmeta */
+button.mat-raised-button {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+/* hover state za dugme */
+button.mat-raised-button:hover {
+    background-color: #495057;
+}
