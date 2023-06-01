@@ -8,9 +8,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { SignupComponent } from '../pages/signup/signup.component';
 import { LoginComponent } from '../pages/login/login.component';
+import { FormsModule } from '@angular/forms';
+import{HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -20,7 +24,7 @@ import { LoginComponent } from '../pages/login/login.component';
     NavbarComponent,
     SignupComponent,
     LoginComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,6 +33,9 @@ import { LoginComponent } from '../pages/login/login.component';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
+    MatSnackBarModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
