@@ -1,0 +1,47 @@
+<div class="container mt-2">
+  <h2 class="text-center">Questions of {{ qtitle }}</h2>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <button class="btn btn-warning mb-2" [routerLink]="'/admin/add-question/' + qid + '/' + qtitle">
+        <i class="bi bi-plus"></i> Add Question
+      </button>
+
+      <div *ngFor="let ques of question; let i = index" class="card mb-2">
+        <div class="card-body">
+          <h5 class="card-title"><b>{{ i + 1 }})</b> <span [innerHTML]="ques.content"></span></h5>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <p><b>1)</b> {{ ques.option1 }}</p>
+              </div>
+              <div class="col-md-6">
+                <p><b>2)</b> {{ ques.option2 }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <p><b>3)</b> {{ ques.option3 }}</p>
+              </div>
+              <div class="col-md-6">
+                <p><b>4)</b> {{ ques.option4 }}</p>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="section">
+            <div class="mt-2"><b>Correct Answer:</b> {{ ques.answer }}</div>
+            <div>
+              <button class="btn btn-outline-primary mr-3" (click)="updateQuestion(ques.quesId)">
+                <i class="bi bi-pencil"></i> Update
+              </button>
+              <button class="btn btn-outline-danger" (click)="deleteQuestion(ques.quesId)">
+                <i class="bi bi-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

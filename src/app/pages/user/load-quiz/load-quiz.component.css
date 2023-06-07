@@ -1,0 +1,58 @@
+.truncate {
+  display: block;
+  black-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.example-header-image {
+  background-image: url("/assets/exam1.png");
+  background-size: cover;
+}
+
+.mat-card-title:not(:first-child),
+.mat-card-subtitle:not(:first-child) {
+  margin-top: -4px;
+  color: #000;
+}
+
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 20px;
+color: black;
+
+      background-color: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 2px 55px rgba(0, 0, 0, 0.158);
+}
+
+
+.text-center {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.btn-primary {
+  background-color: #7b1fa2;
+  color: #fff;
+  border-color: #7b1fa2;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f1bc31;
+  border-color: #f1bc31;
+  color: #fff;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #bcbbbb;
+  margin: 1rem 0;
+}

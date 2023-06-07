@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<h1 class="text-center">All Categories</h1>
+<section class="ftco-section">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-wrap">
+          <table class="table">
+            <thead class="thead-primary">
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let c of categories">
+                <th scope="row" class="scope">{{ c.title }}</th>
+                <td>{{ c.description }}</td>
+                <td><button mat-raised-button color="primary" class="mb-2" (click)="updateCategory(c.cid)">
+                    <mat-icon>edit</mat-icon> Update
+                  </button></td>
+
+                <td><button mat-raised-button color="warn" (click)="deleteCategory(c.cid)">
+                    <mat-icon>delete</mat-icon> Delete
+                  </button></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

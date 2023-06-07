@@ -1,0 +1,72 @@
+<div class="container-fluid mt-2">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="text-center mb-3">Add Quiz</div>
+      <div class="card">
+
+        
+      
+
+
+<div class="form-group">
+
+  <form (ngSubmit)="formSubmit()">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Select Category</mat-label>
+            <mat-select [(ngModel)]="quiz.category" name="category">
+              <mat-option *ngFor="let category of categories" [value]="category">
+                {{ category.title }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+
+
+
+
+          <div class="form-group">
+            <label>Title</label>
+            <input [(ngModel)]="quiz.title" placeholder="Enter Quiz title here" class="form-control"  name="title"
+             />
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+            <textarea [(ngModel)]="quiz.description" placeholder="Enter Quiz description here" class="form-control" rows="4"
+               name="description" ></textarea>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Max Marks</label>
+                <input [(ngModel)]="quiz.maxMarks" placeholder="Enter maximum marks here" class="form-control" 
+                  name="maxMarks"  />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Number of Questions</label>
+                <input [(ngModel)]="quiz.numberOfQuestions" placeholder="Enter number of questions here" class="form-control"
+                   name="numberOfQuestions"  />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Active Status</label>
+            <div class="form-check">
+              <input [(ngModel)]="quiz.active" type="checkbox" class="form-check-input"  name="active" id="active" />
+              <label class="form-check-label" for="active">Active Status</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fa fa-plus"></i> Add Quiz
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

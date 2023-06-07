@@ -1,0 +1,30 @@
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h2 class="text-center mb-4"><strong>Add Category</strong></h2>
+
+      <div class="card custom-card">
+        <div class="card-body">
+
+          <form (ngSubmit)="formSubmit()" class="form">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input required [(ngModel)]="categories.title" name="title" id="title" class="form-control" placeholder="Enter Title here" />
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea [(ngModel)]="categories.description" name="description" id="description" class="form-control"
+                placeholder="Enter Description here" rows="10" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="mr-2"></i>Add Category
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

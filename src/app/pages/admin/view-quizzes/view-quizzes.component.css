@@ -1,0 +1,82 @@
+.example-header-image {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../../assets/quiz.png");
+  background-size: cover;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+
+}
+
+.card-header {
+  background:  #fda085;
+}
+
+.card-footer {
+  background:  #fda085;
+  border-top: 1px solid #dee2e6;
+}
+
+.card-footer button {
+  margin-right: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 3px;
+}
+
+.ml-2 {
+  margin-left: 2px;
+}
+
+.btn {
+  padding: 5px 15px;
+}
+
+.btn-icon {
+  padding: 5px;
+}
+
+
+.btn-primary {
+  background:  #683aa4;
+    border-radius: 15px;
+    border-color: #683aa4;
+}
+
+
+
+
+
+
+
